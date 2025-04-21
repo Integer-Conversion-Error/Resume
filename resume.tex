@@ -4,6 +4,10 @@
 \usepackage{array}
 \usepackage{hyperref}
 \usepackage{paralist} % Add this to your preamble
+\usepackage{titlesec} % Add titlesec package
+
+% Reduce spacing around section titles
+\titlespacing*{\section}{0pt}{1.5ex plus 1ex minus .2ex}{1.0ex plus .2ex}
 
 \renewcommand{\baselinestretch}{1.1}
 
@@ -41,7 +45,7 @@
 \end{small}
 
 \noindent\textbf{Relevant Coursework} (selected):
-\begin{small}Data Structures \& Algorithms (CSI 2110), Design and Analysis of Algorithms I (CSI 3105), Programming Paradigms (CSI 2120), Programming Language Concepts (CSI 3120), Databases I (CSI 2132), Advanced Programming Concepts with C++ (CSI 2372), Discrete Structures, Computer Architecture I (CEG 2136), Digital Systems II (CEG 3155), Introduction to Software Engineering (SEG 2105), Probability \& Statistics for Engineers (MAT 2377).
+\begin{small}Data Structures \& Algorithms, Design and Analysis of Algorithms, Programming Paradigms, Databases, Advanced C++ Programming, Computer Architecture, Software Engineering.
 \end{small}
 %==================== TECHNICAL SKILLS ====================%
 
@@ -60,42 +64,63 @@
 \end{compactitem}
 \end{small}
 
+%==================== EXPERIENCE ====================%
+\section*{Experience}
+\begin{small}
+\noindent\textbf{Software Developer Intern} \hfill \textit{(Jan 2025 -- April 2025)} \\
+\textit{Communications Research Center, Canada}
+\begin{compactitem}
+    \item Developed cross-platform GUI research tools using \textbf{PyQt}, enhancing researcher workflow efficiency.
+    \item Generated data visualizations for technical reports using \textbf{Matplotlib}, improving clarity of research findings.
+    \item Optimized data processing and visualization pipelines using Python \textbf{parallelization} techniques, reducing execution time.
+    \item Implemented automatic script generation for quick setup, reducing setup time by \textbf{98\%} and startup time by \textbf{95\%}.
+\end{compactitem}
+
+\noindent\textbf{Student Junior Business Analyst} \hfill \textit{May 2024 -- Aug 2024} \\
+\textit{HR -- Infrastructure Canada, Ottawa, ON}
+\begin{compactitem}
+    \item Prototyped, designed, and built interactive dashboards using \textbf{Power BI} and \textbf{DAX} for senior directors.
+    \item Ensured data consistency and accuracy by performing cleaning and transformation on HR datasets using \textbf{Power Query}.
+    \item Streamlined data pipelines by standardizing input formats and implementing robust handling for missing data, improving report generation speed.
+    \item Delivered data-driven insights through reports and dashboards, supporting senior management's operational decision-making.
+\end{compactitem}
+
+\noindent\textbf{Technical Support Officer} \hfill \textit{Jan 2020 -- Present} \\
+\textit{Raindrop Janitorial Services Corp., Ottawa, ON}
+\begin{compactitem}
+    \item Resolved hardware, software, and network issues, ensuring secure and uninterrupted business operations for 50+ users.
+    \item Efficiently executed payroll with \textbf{QuickBooks}, handling 50+ employee paychecks accurately and on time.
+    \item Manipulated data models with \textbf{DAX}, reducing wait times for urgent financial reports by 2 weeks.
+\end{compactitem}
+\end{small}
 
 %==================== PROJECTS ====================%
 \section*{Projects}
 \begin{small}
 
-%=== ACADEMIC PROJECTS ===%
+\noindent\textbf{AutoTrader Web Scraping Application} \hfill \textit{GitHub: \href{https://github.com/Integer-Conversion-Error/AutoScraper}{Integer-Conversion-Error/AutoScraper}}
+\begin{compactitem}
+    \item Developed a Python/Flask web app to automate AutoTrader.ca vehicle searches with advanced filtering.
+    \item Implemented \textbf{concurrent scraping} (`concurrent.futures`) and \textbf{persistent storage} of search criteria/results using \textbf{Firebase}.
+    \item Integrated \textbf{AI analysis} for listing reliability, pricing insights, and negotiation points via Google Custom Search API.
+    \item **Rust Rewrite (WIP):** Re-architecting backend with \textbf{Rust}/\textbf{Axum}/\textbf{Tokio}/\textbf{Reqwest}/\textbf{Serde} for enhanced \textbf{performance}, \textbf{type safety}, and \textbf{concurrency}.
+\end{compactitem}
 
 \noindent\textbf{AI Budget Agent Web App} \hfill \textit{GitHub: \href{https://github.com/Integer-Conversion-Error/Budg-It}{Integer-Conversion-Error/Budg-It}}
 \begin{compactitem}
-    \item Developed an AI-driven budgeting tool using Gemini 2.0 and Python to assist users in managing financial scenarios.
-    \item Implemented receipt parsing with OCR to automatically extract and categorize expenses.
+    \item Developed an \textbf{AI-driven} budgeting tool using \textbf{Gemini 2.0} and Python to assist users in managing financial scenarios.
+    \item Implemented \textbf{receipt parsing} with \textbf{OCR} to automatically extract and categorize expenses.
     \item Designed an intuitive web interface for seamless user interaction and financial tracking.
     \item Integrated data visualization to provide users with clear insights into their spending habits.
 \end{compactitem}
 
-\noindent\textbf{AutoTrader Web Scraping Application} \hfill \textit{GitHub: \href{https://github.com/Integer-Conversion-Error/AutoScraper}{Integer-Conversion-Error/AutoScraper}}
-\begin{compactitem}
-    \item Developed a Python/Flask web app to automate AutoTrader.ca vehicle searches with advanced keyword filtering (inclusion/exclusion).
-    \item Implemented concurrent scraping (`concurrent.futures`) and persistent storage of search criteria/results using Firebase (Auth/Firestore).
-    \item Integrated AI analysis (Google Gemini) for listing reliability, pricing insights, and negotiation points via Google Custom Search API.
-    \item **Rust Rewrite (WIP):** Re-architecting backend with Rust/Axum/Tokio/Reqwest/Serde for enhanced performance, type safety, and concurrency.
-\end{compactitem}
-
 \noindent\textbf{Hugging-Stocks: Stock Market Analysis Tools} \hfill \textit{GitHub: \href{https://github.com/Integer-Conversion-Error/Hugging-Stocks}{Integer-Conversion-Error/Hugging-Stocks}}
 \begin{compactitem}
-    \item Developed a suite of Python scripts for comprehensive stock market analysis:
-    \begin{compactitem}
-        \item \texttt{stock\_analyst\_pricing.py}: Gets analyst price predictions to identify trends and patterns.
-        \item \texttt{stock\_hmm\_analysis.py}: Implements Hidden Markov Models to predict stock price movements.
-        \item \texttt{stock\_sentiment.py}: Performs sentiment analysis on financial news to gauge market sentiment.
-        \item \texttt{stock\_sentiment\_GDELT.py}: Utilizes the GDELT dataset for large-scale sentiment analysis of global financial events.
-    \end{compactitem}
-    \item Employed machine learning techniques and natural language processing to enhance predictive accuracy.
-    \item Leveraged data from diverse sources to provide a holistic view of market dynamics.
+    \item Developed Python tools applying \textbf{ML} for stock market insights, exploring sentiment analysis, time series modeling, and external data integration.
+    \item Implemented \textbf{sentiment analysis} (\textbf{NLP} on news/GDELT) and \textbf{Hidden Markov Models (HMMs)} for \textbf{time series analysis} to identify market states/patterns.
+    \item Analyzed stock analyst price predictions to identify trends and assess potential correlations with market movements.
+    \item Demonstrated skills in Python, Machine Learning (ML), Natural Language Processing (NLP), Time Series Analysis, and handling diverse financial data sources.
 \end{compactitem}
-\subsection*{Academic Projects}
 
 \noindent\textbf{Fitness Club Android App}
 \begin{compactitem}
@@ -116,37 +141,6 @@
 \end{compactitem}
 
 \end{small}
-
-
-%==================== EXPERIENCE ====================%
-\section*{Experience}
-\begin{small}
-\noindent\textbf{Software Developer Intern} \hfill \textit{(Jan 2025 -- Present)} \\
-\textit{Communications Research Center, Canada}
-\begin{compactitem}
-    \item Developed internal research tools using \textbf{PyQt} for cross-platform GUIs
-    \item Leveraged \textbf{Matplotlib} for data visualization and technical reporting
-    \item Implemented \textbf{parallelization} techniques to optimize data processing pipelines and visualization
-\end{compactitem}
-
-\noindent\textbf{Student Junior Business Analyst} \hfill \textit{May 2024 -- Aug 2024} \\
-\textit{HR -- Infrastructure Canada, Ottawa, ON}
-\begin{compactitem}
-    \item Prototyped, designed, and built interactive dashboards using Power BI and DAX for senior directors
-    \item Performed \textbf{data cleaning and transformation}, ensuring consistency and accuracy in reports
-    \item Optimized data pipelines by standardizing input formats and handling missing data efficiently
-    \item Provided comprehensive data insights to enhance operational decision-making
-\end{compactitem}
-
-\noindent\textbf{Technical Support Officer} \hfill \textit{Jan 2020 -- Present} \\
-\textit{Raindrop Janitorial Services Corp., Ottawa, ON}
-\begin{compactitem}
-    \item Troubleshoot hardware, software, and network-related issues ensuring secure and uninterrupted operations
-    \item Efficiently execute payroll with QuickBooks, handling 50+ employee paychecks
-    \item Manipulated data models with DAX, reducing wait times for urgent reports by 2 weeks
-\end{compactitem}
-\end{small}
-
 
 
 %==================== EXTRACURRICULAR ====================%
