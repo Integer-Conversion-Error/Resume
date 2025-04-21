@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{setspace}
 \usepackage{array}
 \usepackage{hyperref}
@@ -40,13 +40,9 @@
 \end{compactitem}
 \end{small}
 
-\noindent\textbf{Relevant Coursework} (selected):  
+\noindent\textbf{Relevant Coursework} (selected):
 \begin{small}Data Structures \& Algorithms (CSI 2110), Design and Analysis of Algorithms I (CSI 3105), Programming Paradigms (CSI 2120), Programming Language Concepts (CSI 3120), Databases I (CSI 2132), Advanced Programming Concepts with C++ (CSI 2372), Discrete Structures, Computer Architecture I (CEG 2136), Digital Systems II (CEG 3155), Introduction to Software Engineering (SEG 2105), Probability \& Statistics for Engineers (MAT 2377).
 \end{small}
-
-
-
-%==================== TECHNICAL SKILLS ====================%
 %==================== TECHNICAL SKILLS ====================%
 
 
@@ -55,7 +51,7 @@
 \begin{compactitem}
     \item \textbf{Languages:} Python, Java, JavaScript, C/C++, PHP, Lisp (Racket), DAX, SQL, Bash, Rust
     \item \textbf{Libraries / Tools:} NumPy, Pandas, Matplotlib, OpenCV, PyQt, Firebase, PostgreSQL, Power BI, BeautifulSoup, Selenium, Playwright, Scikit-Learn, TensorFlow
-    \item \textbf{Web Development:} Flask, HTML/CSS, XML, JavaScript (ES6), React 
+    \item \textbf{Web Development:} Flask, HTML/CSS, XML, JavaScript (ES6), React
     \item \textbf{Data Science \& AI:} NLP, Machine Learning, HMMs, Time-Series Analysis, Data Visualization, Web Scraping, Large-Scale Data Processing
     \item \textbf{DevOps \& Parallelization:} \texttt{concurrent.futures}, Threading, Multiprocessing, API Integrations, Cloud Services (Gemini API, Firebase), Git, GitHub
     \item \textbf{Operating Systems:} Windows, Linux (Ubuntu/Debian), MacOS
@@ -65,19 +61,63 @@
 \end{small}
 
 
-
-%==================== TRANSFERABLE SKILLS ====================%
-\section*{Transferable \& Soft Skills}
+%==================== PROJECTS ====================%
+\section*{Projects}
 \begin{small}
+
+%=== ACADEMIC PROJECTS ===%
+
+\noindent\textbf{AI Budget Agent Web App} \hfill \textit{GitHub: \href{https://github.com/Integer-Conversion-Error/Budg-It}{Integer-Conversion-Error/Budg-It}}
 \begin{compactitem}
-    \item Analytical problem solver and quick learner
-    \item Excellent communication \& teamwork; strong work ethic
-    \item Resourceful, self-taught in new technologies
-    \item Time management, attention to detail, and adaptability
-    \item Languages: Native English and Turkish; intermediate French; elementary Russian
+    \item Developed an AI-driven budgeting tool using Gemini 2.0 and Python to assist users in managing financial scenarios.
+    \item Implemented receipt parsing with OCR to automatically extract and categorize expenses.
+    \item Designed an intuitive web interface for seamless user interaction and financial tracking.
+    \item Integrated data visualization to provide users with clear insights into their spending habits.
 \end{compactitem}
+
+\noindent\textbf{AutoTrader Web Scraping Application} \hfill \textit{GitHub: \href{https://github.com/Integer-Conversion-Error/AutoScraper}{Integer-Conversion-Error/AutoScraper}}
+\begin{compactitem}
+    \item Developed a Python/Flask web app to automate AutoTrader.ca vehicle searches with advanced keyword filtering (inclusion/exclusion).
+    \item Implemented concurrent scraping (`concurrent.futures`) and persistent storage of search criteria/results using Firebase (Auth/Firestore).
+    \item Integrated AI analysis (Google Gemini) for listing reliability, pricing insights, and negotiation points via Google Custom Search API.
+    \item **Rust Rewrite (WIP):** Re-architecting backend with Rust/Axum/Tokio/Reqwest/Serde for enhanced performance, type safety, and concurrency.
+\end{compactitem}
+
+\noindent\textbf{Hugging-Stocks: Stock Market Analysis Tools} \hfill \textit{GitHub: \href{https://github.com/Integer-Conversion-Error/Hugging-Stocks}{Integer-Conversion-Error/Hugging-Stocks}}
+\begin{compactitem}
+    \item Developed a suite of Python scripts for comprehensive stock market analysis:
+    \begin{compactitem}
+        \item \texttt{stock\_analyst\_pricing.py}: Gets analyst price predictions to identify trends and patterns.
+        \item \texttt{stock\_hmm\_analysis.py}: Implements Hidden Markov Models to predict stock price movements.
+        \item \texttt{stock\_sentiment.py}: Performs sentiment analysis on financial news to gauge market sentiment.
+        \item \texttt{stock\_sentiment\_GDELT.py}: Utilizes the GDELT dataset for large-scale sentiment analysis of global financial events.
+    \end{compactitem}
+    \item Employed machine learning techniques and natural language processing to enhance predictive accuracy.
+    \item Leveraged data from diverse sources to provide a holistic view of market dynamics.
+\end{compactitem}
+\subsection*{Academic Projects}
+
+\noindent\textbf{Fitness Club Android App}
+\begin{compactitem}
+    \item Built using Java, XML, Android Studio, and Firebase
+    \item Managed user data and integrated real-time database visualization
+\end{compactitem}
+
+\noindent\textbf{Hotel Booking Website}
+\begin{compactitem}
+    \item Utilized Python (Flask), JavaScript, HTML/CSS to create a seamless user interface
+    \item Structured database schemas with SQL \& PostgreSQL, leveraging indexes \& views
+\end{compactitem}
+
+\noindent\textbf{A/K-NN Algorithm Program}
+\begin{compactitem}
+    \item Implemented K-Nearest Neighbors in Java for pattern recognition and efficiency
+    \item Practiced robust algorithmic design and data preprocessing
+\end{compactitem}
+
 \end{small}
-\vfill
+
+
 %==================== EXPERIENCE ====================%
 \section*{Experience}
 \begin{small}
@@ -124,65 +164,18 @@
 \end{small}
 
 
-%==================== PROJECTS ====================%
-\section*{Projects}
+%==================== TRANSFERABLE SKILLS ====================%
+\section*{Transferable \& Soft Skills}
 \begin{small}
-
-%=== ACADEMIC PROJECTS ===%
-
-\noindent\textbf{AI Budget Agent Web App} \hfill \textit{GitHub: \href{https://github.com/Integer-Conversion-Error/Budg-It}{Integer-Conversion-Error/Budg-It}}
 \begin{compactitem}
-    \item Developed an AI-driven budgeting tool using Gemini 2.0 and Python to assist users in managing financial scenarios.
-    \item Implemented receipt parsing with OCR to automatically extract and categorize expenses.
-    \item Designed an intuitive web interface for seamless user interaction and financial tracking.
-    \item Integrated data visualization to provide users with clear insights into their spending habits.
+    \item Analytical problem solver and quick learner
+    \item Excellent communication \& teamwork; strong work ethic
+    \item Resourceful, self-taught in new technologies
+    \item Time management, attention to detail, and adaptability
+    \item Languages: Native English and Turkish; intermediate French; elementary Russian
 \end{compactitem}
-
-\noindent\textbf{AutoTrader Web Scraping Application} \hfill \textit{GitHub: \href{https://github.com/Integer-Conversion-Error/AutoScraper}{Integer-Conversion-Error/AutoScraper}}
-\begin{compactitem}
-    \item Developed a web application (initially Python/Flask, WIP rewrite in Rust) to automate and enhance vehicle searches on AutoTrader.ca.
-    \item Implemented advanced keyword filtering (inclusion/exclusion) and persistent storage of search criteria (payloads) and results using Firebase Firestore.
-    \item **Rust Rewrite (WIP):** Re-architecting the backend using \textbf{Rust} with \textbf{Axum} and \textbf{Tokio} for improved performance, type safety, and concurrency.
-    \item Leveraged \textbf{Reqwest} for asynchronous HTTP requests (AutoTrader API, VDP scraping, Firebase REST API) and the \textbf{scraper} crate for HTML parsing.
-    \item Implemented robust, concurrent fetching of Vehicle Detail Pages (VDPs) using Tokio tasks and \texttt{FuturesUnordered}, including retry logic and concurrency limits to handle rate limiting.
-    \item Utilized \textbf{Serde} for serialization, \textbf{Askama} for HTML templating, and \textbf{jsonwebtoken} for Firebase token validation via Axum extractors.
-    \item Integrated Firebase Authentication and Firestore (via REST API) for user management and data persistence in the Rust version.
-    \item Original Python version featured a PyQt GUI, AI analysis (Gemini), and used libraries like Playwright, Selenium, and BeautifulSoup.
-\end{compactitem}
-\newpage
-\noindent\textbf{Hugging-Stocks: Stock Market Analysis Tools} \hfill \textit{GitHub: \href{https://github.com/Integer-Conversion-Error/Hugging-Stocks}{Integer-Conversion-Error/Hugging-Stocks}}
-\begin{compactitem}
-    \item Developed a suite of Python scripts for comprehensive stock market analysis:
-    \begin{compactitem}
-        \item \texttt{stock\_analyst\_pricing.py}: Gets analyst price predictions to identify trends and patterns.
-        \item \texttt{stock\_hmm\_analysis.py}: Implements Hidden Markov Models to predict stock price movements.
-        \item \texttt{stock\_sentiment.py}: Performs sentiment analysis on financial news to gauge market sentiment.
-        \item \texttt{stock\_sentiment\_GDELT.py}: Utilizes the GDELT dataset for large-scale sentiment analysis of global financial events.
-    \end{compactitem}
-    \item Employed machine learning techniques and natural language processing to enhance predictive accuracy.
-    \item Leveraged data from diverse sources to provide a holistic view of market dynamics.
-\end{compactitem}
-\subsection*{Academic Projects}
-
-\noindent\textbf{Fitness Club Android App}
-\begin{compactitem}
-    \item Built using Java, XML, Android Studio, and Firebase
-    \item Managed user data and integrated real-time database visualization
-\end{compactitem}
-
-\noindent\textbf{Hotel Booking Website}
-\begin{compactitem}
-    \item Utilized Python (Flask), JavaScript, HTML/CSS to create a seamless user interface
-    \item Structured database schemas with SQL \& PostgreSQL, leveraging indexes \& views
-\end{compactitem}
-
-\noindent\textbf{A/K-NN Algorithm Program}
-\begin{compactitem}
-    \item Implemented K-Nearest Neighbors in Java for pattern recognition and efficiency
-    \item Practiced robust algorithmic design and data preprocessing
-\end{compactitem}
-
 \end{small}
+\vfill
 
 
 %==================== END DOCUMENT ====================%
